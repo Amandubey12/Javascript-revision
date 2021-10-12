@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+    <body>
+        <div onmousemove="aman(event)" onmouseout="dubey()"></div>
+
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam cum sit rem quis quidem earum ad cupiditate quasi unde, aspernatur sint provident, nulla voluptatibus, eveniet illo veritatis inventore voluptates iste.
+
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus beatae commodi, aliquam fugit enim eveniet, excepturi culpa assumenda, non distinctio corrupti. Fugiat sit est quod reprehenderit impedit quaerat libero eos excepturi! Saepe totam nemo ratione maxime voluptatem quas ipsum itaque odit, eos alias, quod aut commodi tempore in iusto hic id accusamus voluptatibus tempora ipsa modi iste quisquam numquam. Nobis, officiis quis accusamus explicabo rerum qui, consectetur dolor ex quam ea reprehenderit dicta. Eaque quis soluta quas animi maxime culpa dignissimos incidunt nemo tempora odit ratione nisi, velit labore. Hic voluptate velit magni fugit ipsa in, nobis porro minima modi?</p>
+        
+<p id="demo"></p>
+    </body>
+
+    <script>
+        function aman(e){
+            var x= e.clientX;
+            var y= e.clientY;
+            var coor="coordinates:("+x+","+y+")";
+            document.getElementById("demo").innerHTML="coor";
+        }
+        function dubey(){
+            document.getElementById("demo").innerHTML="";
+        }
+    </script>
+</html>

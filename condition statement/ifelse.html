@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p>clicl on buttton to get a time -based greeting:</p>
+        <button onclick="myfuction()">Tryit</button>
+        <p id="demo"></p>
+        <script>
+            function myfuction(){
+              var greeting;
+
+              var time =  new Date().getHours();
+              if(time<30){
+                 
+                  greeting="good day";
+              }  
+              else if(time<20){
+                  greeting="good morning";
+               
+              }
+              else{
+                  greeting="good night";
+               
+              }
+              document.getElementById("demo").innerHTML=greeting;
+            }
+        </script>
+
+    </body>
+</html>

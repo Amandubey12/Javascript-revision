@@ -1,0 +1,30 @@
+<html>
+    <body>
+        enter your name :<input type="text" id="aman" onblur="onblr()">
+        Surname:<input type="text" id="demo"  onblur="on()">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quos totam unde officia id minima non 
+        </p>
+        
+
+
+
+
+        <script>
+            function onblr(){
+                var x=document.getElementById("aman");
+                x.value=x.value.toUpperCase();
+                document.getElementById("aman").style.background="yellow";
+
+            }
+            function on(){
+                var v=document.getElementById("demo");
+                v.value=v.value.toLowerCase();
+                document.getElementById("demo").style.background="red";
+                
+
+            }
+           
+        </script>
+    
+    </body>
+</html>

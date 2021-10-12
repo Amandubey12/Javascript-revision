@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <p> replace "FYBSc-IT-SemII" With "mycollege" in thhe paragraph below:</p>
+        <button onclick="myFunction()"> try</button>
+        <p id="demo">welcome to FYBScIT-Sem-II!</p>
+        <script>
+            var str= document.getElementById("demo").innerHTML;
+            var txt=str.replace(/FYBScIT-Sem-II/i,"mycollege");
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>
